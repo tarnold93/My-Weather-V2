@@ -28,9 +28,9 @@ $.simpleWeather({
       $('#cheney i').addClass( 'icon-' + weather.code );
         
       // Get Forecast
-      $('#d1 .day').text(weather.forecast[1].date);
-      $('#d1 .temp').text(weather.forecast[1].high);
-      $('#d1 i').addClass( 'icon-' + weather.forecast[1].code );
+      $('#c1 .day').text(weather.forecast[1].date);
+      $('#c1 .temp').text(weather.forecast[1].high);
+      $('#c1 i').addClass( 'icon-' + weather.forecast[1].code );
         
     
       // Entire weather object
@@ -55,9 +55,9 @@ $.simpleWeather({
       $('#spokane i').addClass( 'icon-' + weather.code );
         
       // Get Forecast
-      $('#d1 .day').text(weather.forecast[1].date);
-      $('#d1 .temp').text(weather.forecast[1].high);
-      $('#d1 i').addClass( 'icon-' + weather.forecast[1].code );
+      $('#s1 .day').text(weather.forecast[1].date);
+      $('#s1 .temp').text(weather.forecast[1].high);
+      $('#s1 i').addClass( 'icon-' + weather.forecast[1].code );
     
       // Entire weather object
       console.log(weather);
