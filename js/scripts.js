@@ -53,6 +53,11 @@ $.simpleWeather({
       $('#spokane .temp').text(weather.temp);
       $('#spokane .city').text(weather.city);
       $('#spokane i').addClass( 'icon-' + weather.code );
+        
+      // Get Forecast
+      $('#d1 .day').text(weather.forecast[1].date);
+      $('#d1 .temp').text(weather.forecast[1].high);
+      $('#d1 i').addClass( 'icon-' + weather.forecast[1].code );
     
       // Entire weather object
       console.log(weather);
@@ -73,6 +78,7 @@ else {
 }
 
 $('.geo button').click( function() {
+  $('button').text("Redo Locate");
   //load weather using your lat/lng coordinates
   navigator.geolocation.getCurrentPosition(function(position) {
     getWeather(position.coords.latitude+','+position.coords.longitude); 

@@ -4,7 +4,12 @@
 @import 'weather';
 
 /* My Styles */
-#cheney i, #spokane i {
+#cheney i, #spokane i, #geo i {
     color: aqua;
     font-size: 6em;
+}
+
+.forecast i {
+    color: chartreuse;
+    font-size: 4em;
 }
