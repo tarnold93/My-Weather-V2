@@ -55,10 +55,21 @@ $.simpleWeather({
       $('#spokane i').addClass( 'icon-' + weather.code );
         
       // Get Forecast
+        // Day One
       $('#s1 .day').text(weather.forecast[1].date);
       $('#s1 .temp').text(weather.forecast[1].high);
       $('#s1 i').addClass( 'icon-' + weather.forecast[1].code );
     
+        // Day Two
+      $('#s2 .day').text(weather.forecast[2].date);
+      $('#s2 .temp').text(weather.forecast[2].high);
+      $('#s2 i').addClass( 'icon-' + weather.forecast[2].code );
+        
+        // Day Three
+      $('#s3 .day').text(weather.forecast[3].date);
+      $('#s3 .temp').text(weather.forecast[3].high);
+      $('#s3 i').addClass( 'icon-' + weather.forecast[3].code );
+      
       // Entire weather object
       console.log(weather);
     },
