@@ -87,9 +87,9 @@ var getWeather = function(location) {
     success: function(weather) {
       
       // Display Data
-      $('.geo .temp').text(weather.temp);
-      $('.geo .city').text(weather.city);
-      $('.geo i').addClass( 'icon-' + weather.code );
+      $('#geo .temp').text(weather.temp);
+      $('#geo .city').text(weather.city);
+      $('#geo i').addClass( 'icon-' + weather.code );
     
       // Entire weather object
       console.log();
