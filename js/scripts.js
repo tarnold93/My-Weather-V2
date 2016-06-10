@@ -30,8 +30,16 @@ $.simpleWeather({
       // Get Forecast
       $('#c1 .day').text(weather.forecast[1].date);
       $('#c1 .temp').text(weather.forecast[1].high);
-      $('#c1 i').addClass( 'icon-' + weather.forecast[1].code );
+      $('#c1 i').addClass( 'icon-' + weather.forecast[1].code );    
+        // Day Two
+      $('#c2 .day').text(weather.forecast[2].date);
+      $('#c2 .temp').text(weather.forecast[2].high);
+      $('#c2 i').addClass( 'icon-' + weather.forecast[2].code );
         
+        // Day Three
+      $('#c3 .day').text(weather.forecast[3].date);
+      $('#c3 .temp').text(weather.forecast[3].high);
+      $('#c3 i').addClass( 'icon-' + weather.forecast[3].code );
     
       // Entire weather object
       console.log(weather);
@@ -107,6 +115,22 @@ var getWeather = function(location) {
       $('#geo .temp').text(weather.temp);
       $('#geo .city').text(weather.city);
       $('#geo i').addClass( 'icon-' + weather.code );
+        
+      // Get Forecast
+        // Day One
+      $('#g1 .day').text(weather.forecast[1].date);
+      $('#g1 .temp').text(weather.forecast[1].high);
+      $('#g1 i').addClass( 'icon-' + weather.forecast[1].code );
+    
+        // Day Two
+      $('#g2 .day').text(weather.forecast[2].date);
+      $('#g2 .temp').text(weather.forecast[2].high);
+      $('#g2 i').addClass( 'icon-' + weather.forecast[2].code );
+        
+        // Day Three
+      $('#g3 .day').text(weather.forecast[3].date);
+      $('#g3 .temp').text(weather.forecast[3].high);
+      $('#g3 i').addClass( 'icon-' + weather.forecast[3].code );
     
       // Entire weather object
       console.log();
